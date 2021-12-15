@@ -1,0 +1,155 @@
+@import '../../global.scss';
+
+.skills {
+	background-color: $mainColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	h1 {
+		position: absolute;
+		top: 10px;
+		font-size: 50px;
+		color: $darkGrey;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.arrow {
+		height: 50px;
+		position: absolute;
+		cursor: pointer;
+		color: $darkGrey;
+
+		@include mobile {
+			display: none;
+		}
+
+		&.left {
+			left: 100px;
+		}
+
+		&.right {
+			right: 100px;
+		}
+	}
+
+	.slider {
+		height: 350px;
+		display: flex;
+		position: absolute;
+		left: 0;
+		transition: all 1s ease-out;
+
+		@include mobile {
+			height: 100vh;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.container {
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.item {
+				width: 700px;
+				height: 100%;
+				background-color: white;
+				border-radius: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				@include mobile {
+					width: 80%;
+					height: 170px;
+					margin: 5px 0;
+				}
+
+				.left {
+					flex: 4;
+					height: 80%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.leftContainer {
+						width: 90%;
+						height: 70%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+
+						@include mobile {
+							height: 90%;
+						}		
+
+						.imgContainer {
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							background-color: $tertiaryColor;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+
+							i {
+								width: 25px;
+								font-size: 20px;
+								margin-left: 6px;
+							}
+						}
+
+						h2 {
+							font-size: 20px;
+
+							@include mobile {
+								font-size: 13px;
+							}
+						}
+
+						p {
+							font-size: 18px;
+
+							@include mobile {
+								font-size: 11px;
+							}
+						}
+					}
+				}
+
+				.right {
+					flex: 8;
+					align-items: center;
+					justify-content: center;
+
+
+					.top {
+						top: 50%;
+						overflow: hidden;
+						display: flex;
+					}
+
+					.bottom {
+						overflow: hidden;
+						display: flex;
+					}
+
+					img {
+						
+						
+						overflow: hidden;
+						padding: 10px;
+						width: 25%;
+						height: 100%;
+					}
+				}
+			}	
+		}
+	}
+}
