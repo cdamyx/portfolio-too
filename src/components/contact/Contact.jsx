@@ -9,6 +9,8 @@ export default function Contact(){
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setMessage(true);
+		//use window to access function/script in public index! If you try to call emailjs.sendForm without window here, you get a 'not defined' error.
+		window.emailjs.sendForm('service_sawa95u', 'template_g5hk1bm', '#contact-form')
 	}
 	return (
 		<div className='contact' id='contact'>
@@ -17,9 +19,9 @@ export default function Contact(){
 			</div>
 			<div className='right'>
 				<h2>Contact</h2>
-				<form onSubmit={handleSubmit}>
-					<input type='text' placeholder='Email'/>
-					<textarea placeholder='Message'></textarea>
+				<form id='contact-form' onSubmit={handleSubmit}>
+					<input name='user-email' type='text' placeholder='Email'/>
+					<textarea name='message' placeholder='Message'></textarea>
 					<button type='submit'>Send</button>
 					{message && <span>Thanks, I will reply ASAP :)</span>}
 				</form>

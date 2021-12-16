@@ -1,7 +1,6 @@
 import React from 'react';
 import './skills.scss'
 import {useState} from 'react';
-import testImage from '../../assets/colors.png';
 import htmlImage from '../../assets/html.png';
 import cssImage from '../../assets/css.png';
 import sassImage from '../../assets/sass.png';

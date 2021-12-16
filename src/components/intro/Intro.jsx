@@ -11,7 +11,7 @@ export default function Intro(){
 			backDelay: 1500,
 			backSpeed: 60,
 			showCursor: true,
-			strings: ['Full Stack Developer', 'Software Engineer', 'Programmer', 'Code Warrior', 'Technophile']
+			strings: ['Full Stack Developer', 'Software Engineer', 'Computer Programmer', 'Code Warrior', 'Tech Junkie']
 		});
 
 	}, []);
