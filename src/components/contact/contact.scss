@@ -11,9 +11,23 @@
 	.left {
 		flex: 1;
 		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-image: url("/assets/people-collage.jpg");
 
-		img {
-			height: 100%;
+		h2 {
+			font-size: 30px;
+			color: #EBEBEB;
+			text-shadow: 1px 2px 4px black;
+		}
+
+		i {
+			color: #EBEBEB;
+			text-shadow: 1px 2px 4px black;
+			margin: 10px;
+			padding: 10px;
 		}
 	}
 

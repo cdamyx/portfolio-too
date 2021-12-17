@@ -15,7 +15,9 @@ export default function Contact(){
 	return (
 		<div className='contact' id='contact'>
 			<div className='left'>
-				<img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NcpR-HOd12zhuf0zxLvQXQHaG8%26pid%3DApi&f=1' alt='' />
+				<h2>Connect with me</h2>
+				<i class="fab fa-github-square fa-10x"></i>
+				<i class="fab fa-linkedin fa-10x"></i>
 			</div>
 			<div className='right'>
 				<h2>Contact</h2>
