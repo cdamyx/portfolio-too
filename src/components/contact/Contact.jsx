@@ -16,8 +16,8 @@ export default function Contact(){
 		<div className='contact' id='contact'>
 			<div className='left'>
 				<h2>Connect with me</h2>
-				<i class="fab fa-github-square fa-10x"></i>
-				<i class="fab fa-linkedin fa-10x"></i>
+				<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><i class="fab fa-github-square"></i></a>
+				<a href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><i class="fab fa-linkedin"></i></a>
 			</div>
 			<div className='right'>
 				<h2>Contact</h2>

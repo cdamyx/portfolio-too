@@ -1,6 +1,8 @@
 import React from 'react';
 import './navbar.scss'
-import { Mail } from '@material-ui/icons';
+import Mail from '@material-ui/icons/Mail';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Navbar({menuOpen, setMenuOpen}){
 	return (
@@ -10,8 +12,11 @@ export default function Navbar({menuOpen, setMenuOpen}){
 					<a href='#intro' className='logo'>&lt;Chris Amyx&gt;</a>
 					
 					<div className='itemContainer'>
-						<Mail className='icon'/>
-						<a href='#contact'>Contact Me</a>
+						
+						<a href='#contact'><Mail className='icon'/>Email</a>
+						<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><GitHubIcon className='icon'/>Github</a>
+						<a href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><LinkedInIcon className='icon'/>LinkedIn</a>
+
 					</div>
 				</div>
 				<div className='right'>

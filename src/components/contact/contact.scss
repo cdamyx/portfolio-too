@@ -25,9 +25,16 @@
 
 		i {
 			color: #EBEBEB;
+			font-size: 150px;
 			text-shadow: 1px 2px 4px black;
 			margin: 10px;
 			padding: 10px;
+
+			@include mobile {
+				font-size: 80px;
+				margin: 5px;
+				padding:5px;
+			}
 		}
 	}
 
