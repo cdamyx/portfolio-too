@@ -16,14 +16,18 @@ export default function Contact(){
 		<div className='contact' id='contact'>
 			<div className='left'>
 				<h2>Connect with me</h2>
-				<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><i class="fab fa-github-square"></i></a>
-				<a href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><i class="fab fa-linkedin"></i></a>
+				<div className='social'>
+					<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><i class="fab fa-github-square"></i></a>
+					<a href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><i class="fab fa-linkedin"></i></a>
+				</div>
 			</div>
 			<div className='right'>
 				<h2>Contact</h2>
 				<form id='contact-form' onSubmit={handleSubmit}>
-					<input name='user-email' type='text' placeholder='Email'/>
-					<textarea name='message' placeholder='Message'></textarea>
+					<div className='contact-inputs'>
+						<input name='user-email' type='text' placeholder='Email'/>
+						<textarea name='message' placeholder='Message'></textarea>
+					</div>
 					<button type='submit'>Send</button>
 					{message && <span>Thanks, I will reply ASAP :)</span>}
 				</form>

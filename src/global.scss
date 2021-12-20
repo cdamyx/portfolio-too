@@ -6,9 +6,16 @@ $lightGrey: #EBEBEB;
 $darkGrey: #B8B8B8;
 
 $width: 767px;
+$height-xs: 499px;
 
 @mixin mobile {
 	@media (max-width: #{$width}){
+		@content
+	}
+}
+
+@mixin landscape-xs {
+	@media (max-height: #{$height-xs}){
 		@content
 	}
 }
