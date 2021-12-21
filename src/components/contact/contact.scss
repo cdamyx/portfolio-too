@@ -19,11 +19,14 @@
 
 		h2 {
 			font-size: 30px;
+			padding: 0 10px;
 			color: #EBEBEB;
 			text-shadow: 1px 2px 4px black;
+			overflow: hidden;
 		}
 
 		.social {
+			overflow: hidden;
 
 			i {
 				color: #EBEBEB;

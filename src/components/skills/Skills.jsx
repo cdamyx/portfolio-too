@@ -41,7 +41,7 @@ export default function Skills(){
 			id: '3',
 			key: '3',
 			icon: 'fas fa-arrow-alt-circle-up fa-1x',
-			title: 'Deployment/Other',
+			title: 'Deploy/etc.',
 			desc: 'Heroku | AWS | Git | Linux | Windows | Agile | System Design',
 			img: [herokuImage, awsImage, gitImage, linuxImage, windowsImage]
 		},
