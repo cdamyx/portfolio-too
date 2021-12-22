@@ -158,24 +158,35 @@
 					align-items: center;
 					justify-content: center;
 
-
 					.top {
-						top: 50%;
+						
 						overflow: hidden;
 						display: flex;
+
+						@include tablet-portrait-only {
+							padding-top: 3em;
+						}
 					}
 
 					.bottom {
 						overflow: hidden;
 						display: flex;
+
+						@include tablet-portrait-only {
+							padding-bottom: 3em;
+						}
 					}
 
 					img {
 						
-						overflow: hidden;
 						padding: 10px;
 						width: 25%;
 						height: 100%;
+
+						@include tablet-portrait-only {
+							margin: 0 1rem;
+							width: 15%;
+						}
 					}
 				}
 			}	

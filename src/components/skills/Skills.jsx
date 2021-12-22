@@ -23,7 +23,6 @@ export default function Skills(){
 	const data = [
 		{
 			id: '1',
-			key: '1',
 			icon: 'fab fa-chrome fa-1x',
 			title: 'Front End',
 			desc: 'HTML5 | CSS3 | SASS | Javascript | React | Bootstrap',
@@ -31,7 +30,6 @@ export default function Skills(){
 		},
 		{
 			id: '2',
-			key: '2',
 			icon: 'fas fa-server fa-1x',
 			title: 'Back End',
 			desc: 'NodeJS | ExpressJS | SQL | mongoDB | APIs',
@@ -39,7 +37,6 @@ export default function Skills(){
 		},
 		{
 			id: '3',
-			key: '3',
 			icon: 'fas fa-arrow-alt-circle-up fa-1x',
 			title: 'Deploy/etc.',
 			desc: 'Heroku | AWS | Git | Linux | Windows | Agile | System Design',
