@@ -40,7 +40,7 @@ export const otherPortfolio = [
 		title: "Web Scraper",
 		img: ScraperPic,
 		siteLink: "https://quiet-reaches-09144.herokuapp.com/",
-		codeLink: "https://github.com"
+		codeLink: "https://github.com/cdamyx/revised-govt-site"
 	}
 ];
 
