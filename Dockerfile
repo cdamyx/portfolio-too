@@ -1,5 +1,5 @@
-# build stage
-FROM node:14.16.1-alpine as build-stage
+# build stage - note, successfully built on 14.16.1, had weird sass issue, try 14.16.0 tonight
+FROM node:14.16.0-alpine as build-stage
 WORKDIR /app
 COPY . .
 RUN npm install
