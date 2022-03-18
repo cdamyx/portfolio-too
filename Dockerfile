@@ -1,13 +1,29 @@
 # build stage
-FROM node:lts-alpine as build-stage
+FROM node:14.16.1-alpine as build-stage
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
 COPY . .
+RUN npm install
 RUN npm run build     
 
 # production stage
 FROM nginx:stable-alpine as production-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY --from=build-stage /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+
+
+# previously used in build stage
+#FROM ubuntu
+#COPY package*.json ./
+#RUN apk --no-cache add --virtual native-deps \
+#  g++ gcc libgcc libstdc++ linux-headers make python2 && \
+#  npm install --quiet node-gyp -g &&\
+#  npm install --quiet && \
+#  apk del native-deps
+###RUN apk add --no-cache --virtual .gyp python3 make g++
+#RUN apt install nodejs
+###RUN rmdir --ignore-fail-on-non-empty /app/node_modules/node-sass
+#RUN rmdir --ignore-fail-on-non-empty /app/node_modules/react-scripts
+#RUN npm rebuild node-sass
+# apk add --update nodejs && apk add --update npm && 
+#COPY . .
