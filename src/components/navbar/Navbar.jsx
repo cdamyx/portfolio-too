@@ -9,13 +9,13 @@ export default function Navbar({menuOpen, setMenuOpen}){
 		<div className={'navbar ' + (menuOpen && 'active')}>
 			<div className='wrapper'>
 				<div className='left'>
-					<a href='#intro' className='logo'>&lt;Chris Amyx&gt;</a>
+					<a href='#intro' className={'logo ' + (menuOpen && 'active')}>&lt;Chris Amyx&gt;</a>
 					
 					<div className='itemContainer'>
 						
-						<a href='#contact'><Mail className='icon'/>Email</a>
-						<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><GitHubIcon className='icon'/>Github</a>
-						<a href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><LinkedInIcon className='icon'/>LinkedIn</a>
+						<a className={'navLink ' + (menuOpen && 'active')} href='#contact'><Mail className='icon' />Email</a>
+						<a className={'navLink ' + (menuOpen && 'active')} href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><GitHubIcon className='icon'/>Github</a>
+						<a className={'navLink ' + (menuOpen && 'active')} href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><LinkedInIcon className='icon'/>LinkedIn</a>
 
 					</div>
 				</div>
