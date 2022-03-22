@@ -74,6 +74,20 @@
 				}
 			}
 
+			button {
+				position: absolute;
+				font-size: 15px;
+				background: none;
+				padding-top: 45px;
+				border: none;
+				color: white;
+				text-decoration: underline;
+
+				&:hover {
+					color: $tertiaryColor;
+				}
+			}
+
 			.siteLink {
 				margin-left: -50px;
 			}

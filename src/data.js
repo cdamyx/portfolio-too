@@ -9,18 +9,18 @@ export const informationalPortfolio = [
 		title: "Portfolio",
 		//this is where you have to use the import. If you try to use the path it won't work. Only for internal assets, external work fine with full URL.
 		img: PortfolioPic,
-		siteLink: "http://localhost:3000",
-		codeLink: "https://github.com"
+		siteLink: "http://ec2-23-21-19-108.compute-1.amazonaws.com/",
+		codeLink: "https://github.com/cdamyx/portfolio-too"
 	}
 ];
 
 export const gamesPortfolio = [
 	{
 		id: 1,
-		title: "Tic-tac-toe",
+		title: "TikTokToe",
 		img: GamePic,
-		siteLink: "https://www.duckduckgo.com",
-		codeLink: "https://github.com"
+		siteLink: "https://blissful-edison-8a7461.netlify.app",
+		codeLink: "https://github.com/cdamyx/tic-tac-toe"
 	}
 ];
 
@@ -40,7 +40,7 @@ export const otherPortfolio = [
 		title: "Web Scraper",
 		img: ScraperPic,
 		siteLink: "https://quiet-reaches-09144.herokuapp.com/",
-		codeLink: "https://github.com/cdamyx/revised-govt-site"
+		codeLink: "https://github.com/cdamyx/revised-govt-site" //either make pop-up with instructions on how to access, or link to new page
 	}
 ];
 

@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import './portfolio.scss'
 import PortfolioList from '../portfolioList/PortfolioList.jsx'
 import { featuredPortfolio, informationalPortfolio, gamesPortfolio, productivityPortfolio, otherPortfolio } from '../../data.js';
+const privateText = "This is a private Github repo. Please see resume for access instructions."
 
 export default function Portfolio(){
 	const [selected, setSelected] = useState('featured');
@@ -67,7 +68,9 @@ export default function Portfolio(){
 						<img src={d.img} alt=''/>
 						<h3>{d.title}</h3>
 						<a href={d.siteLink} target="_blank" rel="noreferrer" className="siteLink">Site</a>
-						<a href={d.codeLink} target="_blank" rel="noreferrer" className="codeLink">Code</a>
+						
+						{d.title === "Web Scraper" ? <button className="codeLink" onClick={() => alert(privateText)}>Code</button> : <a href={d.codeLink} target="_blank" rel="noreferrer" className="codeLink">Code</a>}
+						
 					</div>
 				))}
 			</div>

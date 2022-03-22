@@ -37,6 +37,10 @@
 
 				&.active {
 					color: white;
+
+					&:hover {
+						color: $tertiaryColor;
+					}
 				}
 			}
 
@@ -67,6 +71,10 @@
 
 					&.active {
 						color: white;
+
+						&:hover {
+							color: $tertiaryColor;
+						}
 					}
 				}
 			}
