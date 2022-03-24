@@ -17,6 +17,12 @@ export default function Menu({menuOpen, setMenuOpen}){
 				<li>
 					<a href='#contact'>Contact</a>
 				</li>
+				<li className='gitLnLandscapeXs'>
+					<a href='https://github.com/cdamyx'>Github</a>
+				</li>
+				<li className='gitLnLandscapeXs'>
+					<a href='https://www.linkedin.com/in/chrisamyx'>LinkedIn</a>
+				</li>
 			</ul>
 		</div>
 	)

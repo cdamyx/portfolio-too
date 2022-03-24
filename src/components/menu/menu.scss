@@ -34,6 +34,10 @@
 		font-weight: 300;
 		color: white;
 		width: 65%;
+
+		@include landscape-xs {
+			padding-top: 3rem;
+		}
 	}
 
 	li {
@@ -49,8 +53,20 @@
 			}
 		}
 
+		@include landscape-xs {
+			margin-bottom: 5px;
+		}
+
 		&:hover {
 			font-weight: 500;
+		}
+
+		&.gitLnLandscapeXs {
+			display: none;
+
+			@include landscape-xs {
+				display: block;
+			}
 		}
 	}
 }
