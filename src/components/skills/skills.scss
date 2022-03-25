@@ -15,7 +15,7 @@
 		color: $darkGrey;
 
 		@include mobile {
-			display: none;
+			font-size: 25px;
 		}
 
 		@include landscape-xs {
@@ -147,7 +147,7 @@
 							font-size: 18px;
 
 							@include mobile {
-								font-size: 11px;
+								font-size: 9px;
 							}
 						}
 					}

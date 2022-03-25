@@ -16,6 +16,10 @@
 		align-items: center;
 		justify-content: space-between;
 
+		@include mobile {
+			padding-top: 15px;
+		}
+
 		.left {
 			display: flex;
 			align-items: center;
@@ -59,6 +63,7 @@
 					text-decoration: none;
 					color: $mainColor;
 					margin-right: 25px;
+					padding-top: 5px;
 
 					.icon {
 						font-size: 18px;
