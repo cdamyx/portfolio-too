@@ -15,7 +15,9 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-image: url("/assets/people-collage.jpg");
+		background-image: url("/assets/rope-connect.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 
 		@include landscape-xs {
 			display: none;
