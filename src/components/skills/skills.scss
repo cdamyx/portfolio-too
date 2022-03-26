@@ -97,6 +97,10 @@
 					margin: 5px 0;
 				}
 
+				@include portrait-xs {
+					width: 95%;
+				}
+
 				@include landscape-xs {
 					height: 200px;
 				}

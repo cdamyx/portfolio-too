@@ -1,7 +1,7 @@
 //Basically have to import local images here, since we're exporting them in the objects below, because of webpack
 import PortfolioPic from './assets/portfolio.gif'
-import GamePic from './assets/typing.gif'
-import ScraperPic from './assets/webScraper.png'
+import GamePic from './assets/tiktoktoe.gif'
+import ScraperPic from './assets/contracts.gif'
 
 export const informationalPortfolio = [
 	{
@@ -40,7 +40,7 @@ export const otherPortfolio = [
 		title: "Web Scraper",
 		img: ScraperPic,
 		siteLink: "https://quiet-reaches-09144.herokuapp.com/",
-		codeLink: "https://github.com/cdamyx/revised-govt-site" //either make pop-up with instructions on how to access, or link to new page
+		codeLink: "https://github.com/cdamyx/revised-govt-site"
 	}
 ];
 
