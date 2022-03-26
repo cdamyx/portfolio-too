@@ -2,6 +2,7 @@
 import PortfolioPic from './assets/portfolio.gif'
 import GamePic from './assets/tiktoktoe.gif'
 import ScraperPic from './assets/contracts.gif'
+import ToDoPic	from './assets/todo.gif'
 
 export const informationalPortfolio = [
 	{
@@ -28,9 +29,9 @@ export const productivityPortfolio = [
 	{
 		id: 1,
 		title: "To Do List",
-		img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.8QU-dGv_oS6qa-9eE8Y3YwHaNJ%26pid%3DApi&f=1",
-		siteLink: "https://www.duckduckgo.com",
-		codeLink: "https://github.com"
+		img: ToDoPic,
+		siteLink: "",
+		codeLink: "https://github.com/cdamyx/to-do-list"
 	}
 ];
 
@@ -73,14 +74,4 @@ export const featuredPortfolio = [
 		siteLink: gamesPortfolio[0].siteLink,
 		codeLink: gamesPortfolio[0].codeLink
 	},
-	// {
-	// 	id: 5,
-	// 	title: "Social App 5",
-	// 	img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIF.yNsL4cwXrSLkg1KkDc8AmQ%26pid%3DApi&f=1"
-	// },
-	// {
-	// 	id: 6,
-	// 	title: "Social App 6",
-	// 	img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HiOJjPiaC8_hC0YU9PWPBQHaHa%26pid%3DApi&f=1"
-	// }
 ];
