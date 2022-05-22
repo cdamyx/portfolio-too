@@ -3,8 +3,7 @@ import {useState, useEffect} from 'react';
 import './portfolio.scss'
 import PortfolioList from '../portfolioList/PortfolioList.jsx'
 import { featuredPortfolio, informationalPortfolio, gamesPortfolio, productivityPortfolio, otherPortfolio } from '../../data.js';
-const privateText = "This is a private Github repo. Please see resume for access instructions."
-const comingSoonText = "Coming soon! This project is not yet hosted, but feel free to check out the code on Github as I continue to develop it."
+const privateText = "This is a private Github repo. Please contact me to request access."
 
 export default function Portfolio(){
 	const [selected, setSelected] = useState('featured');
@@ -68,10 +67,9 @@ export default function Portfolio(){
 					<div className='item'>
 						<img src={d.img} alt=''/>
 						<h3>{d.title}</h3>
-						{d.title === "To Do List" ?
-							<button className="siteLink" onClick={() => alert(comingSoonText)}>Site</button> :
-							<a href={d.siteLink} target="_blank" rel="noreferrer" className="siteLink">Site</a>
-						}
+
+						<a href={d.siteLink} target="_blank" rel="noreferrer" className="siteLink">Site</a>
+						
 						{d.title === "Web Scraper" ?
 							<button className="codeLink" onClick={() => alert(privateText)}>Code</button> :
 							<a href={d.codeLink} target="_blank" rel="noreferrer" className="codeLink">Code</a>

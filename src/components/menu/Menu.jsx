@@ -18,10 +18,10 @@ export default function Menu({menuOpen, setMenuOpen}){
 					<a href='#contact'>Contact</a>
 				</li>
 				<li className='gitLnLandscapeXs'>
-					<a href='https://github.com/cdamyx'>Github</a>
+					<a href='https://github.com/cdamyx' target='_blank' rel='noreferrer'>Github</a>
 				</li>
 				<li className='gitLnLandscapeXs'>
-					<a href='https://www.linkedin.com/in/chrisamyx'>LinkedIn</a>
+					<a href='https://linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'>LinkedIn</a>
 				</li>
 			</ul>
 		</div>

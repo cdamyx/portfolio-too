@@ -15,7 +15,7 @@ export default function Navbar({menuOpen, setMenuOpen}){
 						
 						<a className={'navLink ' + (menuOpen && 'active')} href='#contact'><Mail className='icon' />Email</a>
 						<a className={'navLink ' + (menuOpen && 'active')} href='https://github.com/cdamyx' target='_blank' rel='noreferrer'><GitHubIcon className='icon'/>Github</a>
-						<a className={'navLink ' + (menuOpen && 'active')} href='https://www.linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><LinkedInIcon className='icon'/>LinkedIn</a>
+						<a className={'navLink ' + (menuOpen && 'active')} href='https://linkedin.com/in/chrisamyx' target='_blank' rel='noreferrer'><LinkedInIcon className='icon'/>LinkedIn</a>
 
 					</div>
 				</div>
