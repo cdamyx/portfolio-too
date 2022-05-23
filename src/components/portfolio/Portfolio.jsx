@@ -54,17 +54,22 @@ export default function Portfolio(){
 		}
 	},[selected])
 
-	const handleClick = (element, id) => {
+	const handleClick = (id) => {
 		const elem = document.getElementById(id);
-		if(elem.className === "item") {
-			elem.classList.add("active");
-		} else {
-			elem.className = "item";
-		}
+
+		elem.classList.add("active");
 	}
 
 	return (
 		<div className='portfolio' id='portfolio'>
+			{document.addEventListener('mouseup', () => {
+				const activeItem = document.getElementsByClassName('item active');
+
+				if(activeItem[0]) {
+					activeItem[0].classList.remove("active");
+				}
+			})}
+
 			<h1>Projects</h1>
 			<ul>
 				{list.map((item) =>(
@@ -73,7 +78,7 @@ export default function Portfolio(){
 			</ul>
 			<div className='container'>
 				{data.map( d => (
-					<div id={d.key} className='item' onClick={() => handleClick(this, d.key)}>
+					<div id={d.key} className='item' onClick={() => handleClick(d.key)}>
 					
 						<img src={d.img} alt=''/>
 						<h3>{d.title}</h3>
