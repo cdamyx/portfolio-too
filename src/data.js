@@ -7,6 +7,7 @@ import ToDoPic	from './assets/todo.gif'
 export const informationalPortfolio = [
 	{
 		id: 1,
+		key: 1,
 		title: "Portfolio",
 		//this is where you have to use the import. If you try to use the path it won't work. Only for internal assets, external work fine with full URL.
 		img: PortfolioPic,
@@ -18,6 +19,7 @@ export const informationalPortfolio = [
 export const gamesPortfolio = [
 	{
 		id: 1,
+		key: 2,
 		title: "TikTokToe",
 		img: GamePic,
 		siteLink: "https://blissful-edison-8a7461.netlify.app",
@@ -28,6 +30,7 @@ export const gamesPortfolio = [
 export const productivityPortfolio = [
 	{
 		id: 1,
+		key: 3,
 		title: "To Do List",
 		img: ToDoPic,
 		siteLink: "https://rocky-waters-91634.herokuapp.com/",
@@ -38,6 +41,7 @@ export const productivityPortfolio = [
 export const otherPortfolio = [
 	{
 		id: 1,
+		key: 4,
 		title: "Web Scraper",
 		img: ScraperPic,
 		siteLink: "https://quiet-reaches-09144.herokuapp.com/",
@@ -48,6 +52,7 @@ export const otherPortfolio = [
 export const featuredPortfolio = [
 	{
 		id: 1,
+		key: informationalPortfolio[0].key,
 		title: informationalPortfolio[0].title,
 		img: informationalPortfolio[0].img,
 		siteLink: informationalPortfolio[0].siteLink,
@@ -55,6 +60,7 @@ export const featuredPortfolio = [
 	},
 	{
 		id: 2,
+		key: otherPortfolio[0].key,
 		title: otherPortfolio[0].title,
 		img: otherPortfolio[0].img,
 		siteLink: otherPortfolio[0].siteLink,
@@ -62,6 +68,7 @@ export const featuredPortfolio = [
 	},
 	{
 		id: 3,
+		key: productivityPortfolio[0].key,
 		title: productivityPortfolio[0].title,
 		img: productivityPortfolio[0].img,
 		siteLink: productivityPortfolio[0].siteLink,
@@ -69,6 +76,7 @@ export const featuredPortfolio = [
 	},
 	{
 		id: 4,
+		key: gamesPortfolio[0].key,
 		title: gamesPortfolio[0].title,
 		img: gamesPortfolio[0].img,
 		siteLink: gamesPortfolio[0].siteLink,

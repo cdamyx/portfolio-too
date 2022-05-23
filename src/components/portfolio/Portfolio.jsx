@@ -54,6 +54,15 @@ export default function Portfolio(){
 		}
 	},[selected])
 
+	const handleClick = (element, id) => {
+		const elem = document.getElementById(id);
+		if(elem.className === "item") {
+			elem.classList.add("active");
+		} else {
+			elem.className = "item";
+		}
+	}
+
 	return (
 		<div className='portfolio' id='portfolio'>
 			<h1>Projects</h1>
@@ -64,10 +73,11 @@ export default function Portfolio(){
 			</ul>
 			<div className='container'>
 				{data.map( d => (
-					<div className='item'>
+					<div id={d.key} className='item' onClick={() => handleClick(this, d.key)}>
+					
 						<img src={d.img} alt=''/>
 						<h3>{d.title}</h3>
-
+						
 						<a href={d.siteLink} target="_blank" rel="noreferrer" className="siteLink">Site</a>
 						
 						{d.title === "Web Scraper" ?

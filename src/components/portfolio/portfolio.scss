@@ -91,10 +91,12 @@
 
 			.siteLink {
 				margin-left: -50px;
+				display: none;
 			}
 
 			.codeLink {
 				margin-left: 50px;
+				display: none;
 			}
 
 			img {
@@ -104,12 +106,20 @@
 				z-index: 1;
 			}
 
-			&:hover {
+			&.active {
 				background-color: $mainColor;
 
 				img {
 					opacity: 0.2;
 					z-index: 0;
+				}
+				
+				.siteLink {
+					display: initial;
+				}
+
+				.codeLink {
+					display: initial;
 				}
 			}
 		}
